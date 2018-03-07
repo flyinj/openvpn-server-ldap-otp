@@ -34,7 +34,7 @@ if [ "${OVPN_VERBOSITY}x" == "x" ];              then export OVPN_VERBOSITY="4";
 if [ "${OVPN_NAT}x" == "x" ];                    then export OVPN_NAT="true";                                     fi
 if [ "${REGENERATE_CERTS}x" == "x" ];            then export REGENERATE_CERTS="false";                            fi
 if [ "${DEBUG}x" == "x" ];                       then export DEBUG="false";                                       fi
-if [ "${ENABLE_OTP}x" == "x" ];                  then export ENABLE_OTP="false";                                  fi
+if [ "${ENABLE_OTP}x" == "x" ];                  then export ENABLE_OTP="true";                                   fi
 if [ "${LDAP_SEARCH_ATTRIBUTE}x" == "x" ];       then export LDAP_SEARCH_ATTRIBUTE="uid";                         fi
 if [ "${LDAP_TLS}x" == "x" ];                    then export LDAP_TLS="true";                                     fi
 if [ "${KEY_LENGTH}x" == "x" ];                  then export KEY_LENGTH="4096";                                   fi
