@@ -37,4 +37,4 @@ if [ "${DEBUG}x" == "x" ];                       then export DEBUG="false";     
 if [ "${ENABLE_OTP}x" == "x" ];                  then export ENABLE_OTP="true";                                   fi
 if [ "${LDAP_SEARCH_ATTRIBUTE}x" == "x" ];       then export LDAP_SEARCH_ATTRIBUTE="uid";                         fi
 if [ "${LDAP_TLS}x" == "x" ];                    then export LDAP_TLS="true";                                     fi
-if [ "${KEY_LENGTH}x" == "x" ];                  then export KEY_LENGTH="4096";                                   fi
+if [ "${KEY_LENGTH}x" == "x" ];                  then export KEY_LENGTH="2048";                                   fi
