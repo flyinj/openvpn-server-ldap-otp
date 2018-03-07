@@ -28,7 +28,7 @@ export EASYRSA_DIR="/opt/easyrsa"
 export PKI_DIR="${OPENVPN_DIR}/pki"
 
 if [ "${OVPN_TLS_CIPHERS}x" == "x" ];            then export OVPN_TLS_CIPHERS="TLS-DHE-RSA-WITH-AES-256-CBC-SHA"; fi
-if [ "${OVPN_PROTOCOL}x" == "x" ];               then export OVPN_PROTOCOL="tcp";                                 fi
+if [ "${OVPN_PROTOCOL}x" == "x" ];               then export OVPN_PROTOCOL="udp";                                 fi
 if [ "${OVPN_NETWORK}x" == "x" ];                then export OVPN_NETWORK="10.50.50.0 255.255.255.0";             fi
 if [ "${OVPN_VERBOSITY}x" == "x" ];              then export OVPN_VERBOSITY="4";                                  fi
 if [ "${OVPN_NAT}x" == "x" ];                    then export OVPN_NAT="true";                                     fi
