@@ -21,7 +21,7 @@ Part01
 if [ "${OVPN_DNS_SERVERS}x" != "x" ] ; then
 
  nameservers=(${OVPN_DNS_SERVERS//,/ })
- 
+
  for this_dns_server in "${nameservers[@]}" ; do
   echo "push \"dhcp-option DNS $this_dns_server\"" >> $CONFIG_FILE
  done
@@ -41,7 +41,7 @@ duplicate-cn
 
 keepalive 10 120
 
-tls-auth $PKI_DIR/ta.key 0 
+tls-auth $PKI_DIR/ta.key 0
 tls-cipher $OVPN_TLS_CIPHERS
 auth SHA512
 cipher AES-256-CBC
@@ -55,7 +55,7 @@ persist-key
 persist-tun
 
 status $OPENVPN_DIR/openvpn-status.log
-log $OPENVPN_DIR/openvpn.log
+log-append $OPENVPN_DIR/openvpn.log
 verb $OVPN_VERBOSITY
 
 # Do not force renegotiation of client
